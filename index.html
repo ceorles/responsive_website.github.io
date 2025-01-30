@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Generation</title>
+
+    <link rel="icon" type="image/x-icon" href="PokeBall.ico">
+
+</head>
+
+<style>
+    @font-face {
+        font-family: 'MyCustomFont';
+        src: url('./bytebounce/ByteBounce.ttf');
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Font', sans-serif;
+        list-style: none;
+        cursor: context-menu;
+    }
+    
+    h1 {
+        color: #FFFFFF;
+        -webkit-text-stroke: #000000 1px;
+        font-family: 'MyCustomFont', sans-serif;
+        font-size: 110px;
+        margin: 0;
+    }
+
+    p {
+        color: #FFFFFF;
+        -webkit-text-stroke: #000000 2px;
+        font-family: 'MyCustomFont', sans-serif;
+        font-size: 50px;
+        margin: 0;
+    }
+
+    a {
+        cursor: pointer;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    h2 {
+        font-size: 35px;
+        margin-bottom: 0;
+    }
+
+    h3 {
+        margin-left: 20px;
+        font-size: 20px;
+    }
+
+    /* FIRST SECTION */
+    .header {
+        background-image: url(Gen\ III.png);
+        padding: 100px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .header .row .col {
+        padding: 100px;
+        text-align: center;
+    }
+    /* FIRST SECTION */
+
+    /* NAVIGATION BAR */
+    .navbar .container .row .col {
+        padding: 10px 30px;
+        display: flex;
+        background-color: #7DAD71;
+        border-top: #FFFFFF solid 1px;
+    }
+
+    .navbar .container .row .col .nav-item {
+        margin-right: 30px;
+    }
+
+    .navbar .container .row .col .nav-item:first-child a {
+        border-bottom: #FFFFFF solid 1px;
+    }
+
+    .navbar .container .row .col .nav-item a:hover {
+        border-bottom: #FFFFFF solid 1px;
+    }
+    /* NAVIGATION BAR */
+
+    /* SECOND SECTION */
+    .hero .container {
+        display: flex;
+    }
+
+    .hero .container .row:first-child {
+        /* border: #000000 solid 1px; */
+        background-color: #f2ffe2;
+        padding: 20px 30px;
+        margin-right: 2px;
+        margin-top: 1px;
+        width: 30%;
+        height: auto;
+    }
+
+    .hero .container .row:first-child .col .image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero .container .row:first-child .col .image img {
+        width: 358px;
+        height: 500px;
+        box-shadow: 10px 10px 18px -2px rgba(0,0,0,0.75);
+    }
+
+    .hero .container .row:last-child {
+        /* border: #000000 solid 1px; */
+        background-color: #f2ffe2;
+        padding: 20px 30px;
+        margin-top: 1px;
+        width: 70%;
+        height: auto;
+    }
+
+    .hero .container .row:last-child .col .box {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .hero .container .row:last-child .col .box .image img {
+        margin: 0 40px;
+        width: 358px;
+        height: 500px;
+        box-shadow: 10px 10px 18px -2px rgba(0,0,0,0.75);
+    }
+    /* SECOND SECTION */
+
+    @media (max-width:1440px) {
+        .hero .container .row:first-child {
+            width: 40%;
+        }
+
+        .hero .container .row:last-child {
+            width: 60%;
+        }
+
+        /* SECOND SECTION */
+        .hero .container .row:first-child .col .image img {
+            width: 287px;
+            height: 400px;
+        }
+
+        .hero .container .row:last-child .col .box .image img {
+            width: 287px;
+            height: 400px;
+        }
+        /* SECOND SECTION */
+    }
+
+    @media (max-width:768px) {
+        h1 {
+            font-size: 90px;
+        }
+
+        p {
+            font-size: 45px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+
+        /* FIRST SECTION */
+        .header {
+            padding: 80px;
+        }
+
+        .header .row .col {
+            padding: 50px;
+        }
+        /* FIRST SECTION */
+
+        /* SECOND SECTION */
+        .hero .container .row:first-child {
+            width: 50%;
+        }
+
+        .hero .container .row:last-child {
+            width: 50%;
+        }
+        .hero .container .row:first-child .col .image img {
+            width: 215px;
+            height: 300px;
+        }
+
+        .hero .container .row:last-child .col .box .image img {
+            margin: 0 20px;
+            width: 215px;
+            height: 300px;
+        }
+        /* SECOND SECTION */
+    }
+
+    @media (max-width: 425px) {
+        h1 {
+            font-size: 70px;
+        }
+
+        /* FIRST SECTION */
+        .header {
+            padding: 50px 10px;
+        }
+
+        .header .row .col {
+            padding: 10px;
+        }
+        /* FIRST SECTION */
+
+        /* NAVIGATION */
+        .navbar .container .row .col {
+            padding-left: 0;
+            padding-right: 0;
+            flex-direction: row;
+            justify-content: center;
+        }
+        /* NAVIGATION */
+
+        /* SECOND SECTION */
+        .hero .container {
+            display: block;
+        }
+
+        .hero .container .row:first-child {
+            width: 86%;
+        }
+
+        .hero .container .row:last-child {
+            width: 86%;
+        }
+
+        .hero .container .row:last-child .col {
+            max-width: 100%;
+            display: block;
+            overflow-x: hidden;
+            justify-content: center;
+        }
+
+        .hero .container .row:last-child .col .box {
+            max-width: 100%;
+            overflow-x: hidden;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero .container .row:last-child .col .box .image img {
+            margin-bottom: 30px;
+        }
+        /* SECOND SECTION */
+    }
+
+</style>
+
+<body>
+    <section class="header">
+        <div class="row">
+            <div class="col">
+                <h1>Generation III</h1>
+                <p>Emerald</p>
+            </div>
+        </div>
+    </section>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <li class="nav-item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Pokédex</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Trading</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">News</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Route 102</h2>
+                    <h3>Petalburg City</h3>
+                    <div class="image">
+                       <img src="SWSH10_EN_60.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Hoenn’s Starters</h2>
+                    <h3>Littleroot Town </h3>
+                    <div class="box">
+                        <li class="image">
+                            <img src="XY3_EN_12.png" alt="Torchic">
+                        </li>
+                        <li class="image">
+                            <img src="XY5_EN_33.png" alt="Mudkip">
+                        </li>
+                        <li class="image">
+                            <img src="XYP_EN_XY36.png" alt="Treecko">
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
