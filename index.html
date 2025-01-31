@@ -12,7 +12,7 @@
 <style>
     @font-face {
         font-family: 'MyCustomFont';
-        src: url('bytebounce/ByteBounce.ttf');
+        src: url('./bytebounce/ByteBounce.ttf');
     }
 
     body {
@@ -47,40 +47,43 @@
     }
 
     h2 {
-        font-size: 35px;
+        
+        font-size: 30px;
         margin-bottom: 0;
     }
 
     h3 {
-        margin-left: 20px;
-        font-size: 20px;
+        font-size: 15px;
     }
 
     /* FIRST SECTION */
     .header {
-        background-image: url(Gen\ III.png);
-        padding: 100px;
+        background-image: url(Gen-III.png);
+        padding: 200px 0;
+        width: 100%;
+        height: auto;
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
     }
 
     .header .row .col {
-        padding: 100px;
         text-align: center;
     }
     /* FIRST SECTION */
 
     /* NAVIGATION BAR */
     .navbar .container .row .col {
-        padding: 10px 30px;
         display: flex;
         background-color: #7DAD71;
         border-top: #FFFFFF solid 1px;
+        width: 100%;
+        height: 40px;
+        align-items: center;
     }
 
     .navbar .container .row .col .nav-item {
-        margin-right: 30px;
+        margin-left: 45px;
     }
 
     .navbar .container .row .col .nav-item:first-child a {
@@ -98,12 +101,10 @@
     }
 
     .hero .container .row:first-child {
-        /* border: #000000 solid 1px; */
-        background-color: #f2ffe2;
+        background-color: #F2FFF2;
         padding: 20px 30px;
-        margin-right: 2px;
         margin-top: 1px;
-        width: 30%;
+        width: 40%;
         height: auto;
     }
 
@@ -113,17 +114,16 @@
     }
 
     .hero .container .row:first-child .col .image img {
-        width: 358px;
-        height: 500px;
+        width: auto;
+        height: 100%;
         box-shadow: 10px 10px 18px -2px rgba(0,0,0,0.75);
     }
 
     .hero .container .row:last-child {
-        /* border: #000000 solid 1px; */
-        background-color: #f2ffe2;
-        padding: 20px 30px;
+        background-color: #F2FFF2;
+        padding: 20px 0;
         margin-top: 1px;
-        width: 70%;
+        width: 60%;
         height: auto;
     }
 
@@ -131,41 +131,28 @@
         display: flex;
         overflow-x: auto;
         white-space: nowrap;
+        max-width: fit-content;
+        width: auto;
+    }
+
+    .hero .container .row:last-child .col .box .image {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto 15px;
     }
 
     .hero .container .row:last-child .col .box .image img {
-        margin: 0 40px;
-        width: 358px;
-        height: 500px;
+        margin-left: 30px;
+        width: auto;
+        height: 100%;
         box-shadow: 10px 10px 18px -2px rgba(0,0,0,0.75);
-    }
-    /* SECOND SECTION */
-
-    @media (max-width:1440px) {
-        .hero .container .row:first-child {
-            width: 40%;
-        }
-
-        .hero .container .row:last-child {
-            width: 60%;
-        }
-
-        /* SECOND SECTION */
-        .hero .container .row:first-child .col .image img {
-            width: 287px;
-            height: 400px;
-        }
-
-        .hero .container .row:last-child .col .box .image img {
-            width: 287px;
-            height: 400px;
-        }
-        /* SECOND SECTION */
     }
 
     @media (max-width:768px) {
         h1 {
-            font-size: 90px;
+            font-size: 80px;
         }
 
         p {
@@ -182,11 +169,7 @@
 
         /* FIRST SECTION */
         .header {
-            padding: 80px;
-        }
-
-        .header .row .col {
-            padding: 50px;
+            padding: 80px 0;
         }
         /* FIRST SECTION */
 
@@ -199,14 +182,14 @@
             width: 50%;
         }
         .hero .container .row:first-child .col .image img {
-            width: 215px;
-            height: 300px;
+            width: 100%;
+            height: auto;
         }
 
         .hero .container .row:last-child .col .box .image img {
             margin: 0 20px;
-            width: 215px;
-            height: 300px;
+            width: auto;
+            height: 100%;
         }
         /* SECOND SECTION */
     }
@@ -216,22 +199,27 @@
             font-size: 70px;
         }
 
-        /* FIRST SECTION */
-        .header {
-            padding: 50px 10px;
+        h2 {
+            text-align: center;
         }
 
-        .header .row .col {
-            padding: 10px;
+        h3 {
+            text-align: center;
+        }
+
+        /* FIRST SECTION */
+        .header {
+            padding: 60px 0;
         }
         /* FIRST SECTION */
 
         /* NAVIGATION */
-        .navbar .container .row .col {
-            padding-left: 0;
-            padding-right: 0;
-            flex-direction: row;
-            justify-content: center;
+        .navbar .container .row .col .nav-item {
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
         }
         /* NAVIGATION */
 
@@ -241,15 +229,14 @@
         }
 
         .hero .container .row:first-child {
-            width: 86%;
+            width: auto;
         }
 
         .hero .container .row:last-child {
-            width: 86%;
+            width: auto;
         }
 
         .hero .container .row:last-child .col {
-            max-width: 100%;
             display: block;
             overflow-x: hidden;
             justify-content: center;
@@ -275,7 +262,7 @@
         <div class="row">
             <div class="col">
                 <h1>Generation III</h1>
-                <p>Emerald</p>
+                <p>Pokemon Emerald</p>
             </div>
         </div>
     </section>
@@ -308,7 +295,7 @@
                     <h2>Route 102</h2>
                     <h3>Petalburg City</h3>
                     <div class="image">
-                       <img src="SWSH10_EN_60.png" alt="">
+                       <img src="SWSH10_EN_60.png" alt="Ralts">
                     </div>
                 </div>
             </div>
