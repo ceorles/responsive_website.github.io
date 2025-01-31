@@ -26,7 +26,7 @@
     
     h1 {
         color: #FFFFFF;
-        -webkit-text-stroke: #000000 1px;
+        -webkit-text-stroke: #000000 .2px;
         font-family: 'MyCustomFont', sans-serif;
         font-size: 110px;
         margin: 0;
@@ -34,7 +34,7 @@
 
     p {
         color: #FFFFFF;
-        -webkit-text-stroke: #000000 2px;
+        -webkit-text-stroke: #000000 1.5px;
         font-family: 'MyCustomFont', sans-serif;
         font-size: 50px;
         margin: 0;
@@ -58,7 +58,7 @@
 
     /* FIRST SECTION */
     .header {
-        background-image: url(Gen III.png);
+        background-image: url(Gen-III.png);
         padding: 200px 0;
         width: 100%;
         height: auto;
@@ -175,11 +175,12 @@
 
         /* SECOND SECTION */
         .hero .container .row:first-child {
-            width: 50%;
+            width: auto;
+            height: auto;
         }
 
         .hero .container .row:last-child {
-            width: 50%;
+            width: 61%;
         }
         .hero .container .row:first-child .col .image img {
             width: 100%;
@@ -196,7 +197,7 @@
 
     @media (max-width: 425px) {
         h1 {
-            font-size: 70px;
+            font-size: 50px;
         }
 
         h2 {
@@ -205,6 +206,10 @@
 
         h3 {
             text-align: center;
+        }
+
+        p {
+            font-size: 35px;
         }
 
         /* FIRST SECTION */
@@ -249,8 +254,13 @@
             align-items: center;
         }
 
+        .hero .container .row:first-child .col .image img {
+            width: auto;
+            height: 100%;
+        }
+
         .hero .container .row:last-child .col .box .image img {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         /* SECOND SECTION */
     }
