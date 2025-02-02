@@ -193,22 +193,17 @@
 
         /* SECOND SECTION */
         .hero .container .row:first-child {
-            width: auto;
-            height: auto;
+            max-width: 50%;
         }
 
         .hero .container .row:last-child {
-            width: 61%;
-        }
-        .hero .container .row:first-child .col .image img {
-            width: 100%;
-            height: auto;
+            /* max-width: 61%; */
+            max-width: 61%;
+            min-width: 30%;
         }
 
         .hero .container .row:last-child .col .box .image img {
             margin: 0 20px;
-            width: auto;
-            height: 100%;
         }
         /* SECOND SECTION */
     }
@@ -252,10 +247,12 @@
         }
 
         .hero .container .row:first-child {
+            max-width: 100%;
             width: auto;
         }
 
         .hero .container .row:last-child {
+            max-width: 100%;
             width: auto;
         }
 
@@ -270,11 +267,6 @@
             overflow-x: hidden;
             flex-direction: column;
             align-items: center;
-        }
-
-        .hero .container .row:first-child .col .image img {
-            width: auto;
-            height: 100%;
         }
 
         .hero .container .row:last-child .col .box .image img {
